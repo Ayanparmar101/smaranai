@@ -81,7 +81,7 @@ const NavBar = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center relative">
           {/* Hamburger Menu */}
-          <div className="flex items-center">
+          <div className="flex items-center pl-1">
             <Sheet>
               <SheetTrigger asChild>
                 <button className="p-2 rounded-md hover:bg-muted focus:outline-none">
@@ -106,6 +106,9 @@ const NavBar = () => {
                       <span className="text-lg">{item.name}</span>
                     </button>
                   ))}
+                  <div className="md:hidden mt-4 px-4">
+                    <AuthButton />
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
@@ -132,7 +135,9 @@ const NavBar = () => {
           {/* Auth Button and Theme Toggle */}
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <AuthButton />
+            <div className="hidden md:block">
+              <AuthButton />
+            </div>
             
             {/* Mobile Menu Button */}
             <div className="md:hidden">

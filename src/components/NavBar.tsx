@@ -112,9 +112,18 @@ const NavBar = () => {
           </div>
           
           {/* Logo (Centered) */}
-          <div className="absolute left-1/2 transform -translate-x-1/2">
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
             <Link to="/" className="flex items-center space-x-2">
               <span className="font-bold text-2xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-red bg-clip-text text-transparent">
+                Smaran.ai
+              </span>
+            </Link>
+          </div>
+          
+          {/* Mobile Logo (Left-aligned) */}
+          <div className="md:hidden">
+            <Link to="/" className="flex items-center space-x-2">
+              <span className="font-bold text-xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-red bg-clip-text text-transparent">
                 Smaran.ai
               </span>
             </Link>

@@ -21,7 +21,7 @@ const Index = () => {
               <div className="md:w-1/2 mb-10 md:mb-0">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                   <span className="block">Learn English</span>
-                  <span className="bg-gradient-to-r from-kid-blue via-kid-purple to-kid-red bg-clip-text text-transparent">
+                  <span className="gradient-text">
                     The Fun Way!
                   </span>
                 </h1>

@@ -138,14 +138,6 @@ const NavBar = () => {
             <div className="hidden md:block">
               <AuthButton />
             </div>
-            
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
-              <button onClick={toggle} className="p-2 rounded-md bg-muted">
-                <span className="sr-only">Open menu</span>
-                <Menu className="h-6 w-6" />
-              </button>
-            </div>
           </div>
         </div>
 

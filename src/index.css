@@ -1,3 +1,23 @@
+
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4E9BF5, #76D394, #FFCF45, #FF7568, #B07CF8, #FF8FD2, #FFA245);
+  background-size: 200% auto;
+  animation: gradientText 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

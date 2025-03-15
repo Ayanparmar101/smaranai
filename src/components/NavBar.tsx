@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { BookOpen, Image, Mic, MessageCircle, HelpCircle, Home, GraduationCap, Menu } from 'lucide-react';
@@ -113,20 +112,20 @@ const NavBar = () => {
               </SheetContent>
             </Sheet>
           </div>
-          
+
           {/* Logo (Centered) */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="font-bold text-2xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-red bg-clip-text text-transparent">
+              <span className="font-bold text-2xl gradient-text">
                 Smaran.ai
               </span>
             </Link>
           </div>
-          
+
           {/* Mobile Logo (Left-aligned) */}
           <div className="md:hidden">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl bg-gradient-to-r from-kid-blue via-kid-purple to-kid-red bg-clip-text text-transparent">
+              <span className="font-bold text-xl gradient-text">
                 Smaran.ai
               </span>
             </Link>
